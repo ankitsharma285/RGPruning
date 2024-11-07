@@ -1,0 +1,13 @@
+CUDA_VISIBLE_DEVICES=0 python mMainWT.py \
+--dataset cifar100 \
+--arch vgg \
+--depth 16 \
+--lr 0.1 \
+--epochs 50 \
+--schedule 77 87 \
+--batch-size 256 \
+--test-batch-size 128 \
+--save ./baseline/vgg-cifar100/main_run \
+--momentum 0.9 \
+--sparsity-regularization \
+--seed 1
